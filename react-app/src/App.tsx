@@ -204,8 +204,7 @@ const data = [
     name: "Carminic Acid",
     picture:"🍺",
     origin: "May contain alcohal",
-    color: "bg-green-700",
-    colortxt: "text-green-700",
+  
     description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
     approval: "Not approved in EU, Not approved in US"
   },

@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ number, color, colortxt, halal, category, n
   return (
     <div className="bg-gradient-to-br from-white to-slate-100 border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 max-w-md w-full">
       <div className="flex items-center justify-between mb-4">
-      <span className={`text-3xl px-3 py-1 rounded-full font-semibold shadow-sm ${color ?? "bg-gray-200 text-gray-800"}`}>
+      <span className={`text-3xl px-3 py-1 rounded-full font-semibold shadow-sm ${color ?? "bg-gray-800 text-gray-100"}`}>
           E{number}
         </span>
         <h2 className={`text-3xl font-bold ${colortxt ?? "text-gray-800"}`}>{halal}</h2>
