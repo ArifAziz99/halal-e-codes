@@ -1,0 +1,111 @@
+import React, { useState} from "react";
+import Card from "./card";
+
+const data = [
+  {
+    number: 101,
+    halal: "MASHBOOH",
+    category: "colors",
+    name: "Riboflavin(Vitamin B2)",
+    picture:"🐷",
+    origin: "Might be from pork origin",
+    color: "bg-yellow-600",
+    colortxt: "text-yellow-600",
+    description: "Mashbouh (Haram if from pork liver & kidney, Halal if 100% plant material)",
+    approval: "Approved in EU, Approved in US"
+   
+  },
+  {
+    number: 102,
+    halal: "MASHBOOH", 
+    category: "colors",
+    name: "Citric Acid",
+    picture:"🚎",
+    origin: "Natural",
+    color: "bg-yellow-600",
+    colortxt: "text-yellow-600",
+    description: "Adds a sour taste and acts as a preservative",
+    approval: "Approved in US, Not approved in EU"
+  },
+  {
+    number: 103,
+    halal: "HALAL",
+    category: "Colors",
+    name: "Alkannin",
+    picture:"🌿",
+    origin: "From plant origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 104,
+    halal: "HARAM",
+    category: "colors",
+    name: "Citric Acid",
+    picture:"🪳",
+    origin: "From insect origin",
+    color: "bg-red-700",
+    colortxt: "text-red-700",
+    description: "Adds a sour taste and acts as a preservative.",
+    approval: "Approved in US, Not approved in EU",
+  },
+  // Add more items as needed
+];
+
+const App: React.FC = () => {
+  const [search, setSearch] = useState("");
+
+  const filteredData = data.filter((item) => {
+    const query = search.toLowerCase();
+
+    return (
+      item.name.toLowerCase().includes(query) ||
+      item.description.toLowerCase().includes(query) ||
+      item.category.toLowerCase().includes(query) ||
+      item.halal.toLowerCase().includes(query) ||
+      item.number.toString().includes(query) // ✅ now filters by number
+    );
+  });
+
+  return (
+    <div className="min-h-screen">
+      <div className="max-w-xl mx-auto mb-6">
+        <input
+          type="text"
+          placeholder="Search by name, description, category, or number..."
+          className="w-full p-3 rounded-xl bg-gray-400 shadow-sm focus:outline-none focus:bg-gray-500"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+        {filteredData.length > 0 ? (
+          filteredData.map((item) => (
+            <Card
+          key={item.number}
+          number={item.number}
+          halal={item.halal}
+          category={item.category}
+          name={item.name}
+          picture={item.picture}
+          origin={item.origin}
+          color={item.color}
+          colortxt={item.colortxt}
+          description={item.description}
+          approval={item.approval}
+            />
+          ))
+        ) : (
+          <p className="text-center text-xl col-span-full text-gray-500">
+            No results found.
+          </p>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default App;
