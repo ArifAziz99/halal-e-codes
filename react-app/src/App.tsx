@@ -75,7 +75,7 @@ const App: React.FC = () => {
         <input
           type="text"
           placeholder="Search by name, description, category, or number..."
-          className="w-full p-3 rounded-xl bg-gray-400 shadow-sm focus:outline-none focus:bg-gray-500"
+          className="w-full p-3 text-black rounded-xl bg-gray-50 shadow-sm focus:outline-none focus:bg-gray-100 focus:ring-2 focus:ring-gray-300 hover:bg-gray-100 transition duration-200"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
