@@ -3,8 +3,20 @@ import Card from "./card";
 
 const data = [
   {
+    number: 100,
+    halal: "MASHBOUH",
+    category: "colors",
+    name: "Curcumin/Turmeric",
+    picture:"🐷",
+    origin: "Might be from pork origin",
+    color: "bg-yellow-600",
+    colortxt: "text-yellow-600",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Approved in EU, Approved in US"
+  },
+  {
     number: 101,
-    halal: "MASHBOOH",
+    halal: "MASHBOUH",
     category: "colors",
     name: "Riboflavin(Vitamin B2)",
     picture:"🐷",
@@ -17,11 +29,11 @@ const data = [
   },
   {
     number: 102,
-    halal: "MASHBOOH", 
+    halal: "MASHBOUH", 
     category: "colors",
     name: "Citric Acid",
-    picture:"🚎",
-    origin: "Natural",
+    picture:"🐟",
+    origin: "Might be from fish origin",
     color: "bg-yellow-600",
     colortxt: "text-yellow-600",
     description: "Adds a sour taste and acts as a preservative",
@@ -32,8 +44,8 @@ const data = [
     halal: "HALAL",
     category: "Colors",
     name: "Alkannin",
-    picture:"🌿",
-    origin: "From plant origin",
+    picture:"🐠",
+    origin: "From fish origin",
     color: "bg-green-700",
     colortxt: "text-green-700",
     description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
@@ -51,7 +63,153 @@ const data = [
     description: "Adds a sour taste and acts as a preservative.",
     approval: "Approved in US, Not approved in EU",
   },
-  // Add more items as needed
+  {
+    number: 105,
+    halal: "HALAL",
+    category: "colors",
+    name: "Beet Red",
+    picture:"🌿",
+    origin: "From plant origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 106,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"🍃",
+    origin: "From plant origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 107,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"🍃",
+    origin: "From plant origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 108,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"🍃",
+    origin: "From plant origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 109,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"🍃",
+    origin: "From plant origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 110,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"🍃",
+    origin: "From plant origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+
+  {
+    number: 111,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"💀",
+    origin: "Might be unsafe",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 112,
+    halal: "MASHBOUH", 
+    category: "colors",
+    name: "Citric Acid",
+    picture:"☠️",
+    origin: "Unsafe",
+    color: "bg-yellow-600",
+    colortxt: "text-yellow-600",
+    description: "Adds a sour taste and acts as a preservative",
+    approval: "Approved in US, Not approved in EU"
+  },
+  {
+    number: 113,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"🍷",
+    origin: "Contain alcohal",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 114,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"💀🥩",
+    origin: "Might be unsafe, Might be from animal origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+
+  {
+    number: 115,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"🥩",
+    origin: "From plant origin",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+  {
+    number: 116,
+    halal: "HALAL",
+    category: "colors",
+    name: "Carminic Acid",
+    picture:"🍺",
+    origin: "May contain alcohal",
+    color: "bg-green-700",
+    colortxt: "text-green-700",
+    description: "Halal. Natural dye that is obtained from the extract of plants from the borage family Alkanna tinctoria that asr found in the south of France",
+    approval: "Not approved in EU, Not approved in US"
+  },
+
 ];
 
 const App: React.FC = () => {
@@ -65,7 +223,7 @@ const App: React.FC = () => {
       item.description.toLowerCase().includes(query) ||
       item.category.toLowerCase().includes(query) ||
       item.halal.toLowerCase().includes(query) ||
-      item.number.toString().includes(query) // ✅ now filters by number
+      item.number.toString().includes(query) //
     );
   });
 
